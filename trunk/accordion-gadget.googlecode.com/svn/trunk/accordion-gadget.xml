@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+	<ModulePrefs 
+  	title="__UP_title__" 
+  	author="Jeff Davis"
+  	author_email="jwdavis@google.com"
+  	directory_title="Google Sites Accordion Gadget"
+  	description="jQuery accordion gadget for Google Sites">
+  	<Require feature="dynamic-height" /> 
+  </ModulePrefs>
+  <UserPref name="title" display_name="Tite" required="true" />  
+  <UserPref name="height" display_name="Height" required="true" /> 
+  <UserPref name="width" display_name="Width" required="true" /> 
+  <UserPref name="panels" display_name="# Panels (1-5)" default_value="3" datatype="enum" required="true">
+  	<EnumValue="1" />
+  	<EnumValue="2" />
+  	<EnumValue="3" />
+  	<EnumValue="4" />
+  	<EnumValue="5" />
+  </UserPref> 
+    
+  <Content type="html">
+     <![CDATA[ 
+   			<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    		<script>
+					google.load("jquery", "1.3.2");
+					google.load("jqueryui", "1.7.1");
+   				var prefs = new gadgets.Prefs();
+   				
+   				var $j = jQuery.noConflict();
+      		$j(function() {
+        		$j("#accordion").accordion({collapsible: true});
+      		});
+    		</script>
+
+				<div id="accordion">
+					<h3><a href="#">Panel 1</a></h3>
+					<div id="panel1">Hello, world!</div>
+					
+					<h3><a href="#">Panel 2</a></h3>
+					<div id="panel2"></div>
+					
+					<h3><a href="#">Panel 3</a></h3>
+					<div id="panel3" ></div>
+					
+					<h3><a href="#">Panel 4</a></h3>
+					<div id="panel4"></div>
+				</div>
+     ]]>
+  </Content> 
+</Module>
