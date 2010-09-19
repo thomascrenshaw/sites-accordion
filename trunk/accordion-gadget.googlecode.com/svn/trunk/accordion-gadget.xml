@@ -11,12 +11,12 @@
   <UserPref name="title" display_name="Tite" required="true" />  
   <UserPref name="height" display_name="Height" required="true" /> 
   <UserPref name="width" display_name="Width" required="true" /> 
-  <UserPref name="panels" display_name="# Panels (1-5)" default_value="3" datatype="enum" required="true">
-  	<EnumValue="1" />
-  	<EnumValue="2" />
-  	<EnumValue="3" />
-  	<EnumValue="4" />
-  	<EnumValue="5" />
+  <UserPref name="panels" display_name="# Panels (1-5)" default_value="3"  required="true" datatype="enum">
+  	<EnumValue value="1" />
+  	<EnumValue value="2" />
+  	<EnumValue value="3" />
+  	<EnumValue value="4" />
+  	<EnumValue value="5" />
   </UserPref> 
     
   <Content type="html">
