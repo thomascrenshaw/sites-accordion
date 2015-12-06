@@ -1,0 +1,1 @@
+Simple gadget to expose jQuery accordions within Google Sites.
